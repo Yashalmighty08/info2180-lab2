@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    font-size: 18px;
+    color:#2D3748;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",
+    Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif
+}
+
+
+/* Main Grid Layout */
+
+.container {
+    min-height: 100vh;
+
+    display:grid;
+
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* HEADER */
+
+header {
+    grid-column: 1 / 3;
+
+    background-color: #3C8527;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* profile image */
+header img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/* Header text */
+.header-text {
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+    font-size: 39px;
+    font-family:
+    "Trebuchet MS",
+    Arial,
+    sans-serif;
+}
+
+header p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+/* SIDEBAR */
+aside {
+    grid-column: 1;
+    padding: 25px 14px;
+    background-color: #FFFFFF;
+}
+
+/* About Me Section */
+.about {
+    background-color: #E2E8F0;
+    padding: 10px;
+    margin-bottom: 18px;
+}
+
+.about h3 {
+    color: #333322;
+    font-family:
+    Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+
+    margin-top: 0;
+}
+
+.about p {
+    margin-bottom: 0;
+}
+
+/* Social Media and Archives */
+.sidebar-section {
+    border-left: 3px solid #3C8527;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+.sidebar-section h3{
+    color: #28651C;
+    font-family:
+    Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+    margin-top: 0;
+}
+
+/* Remove default list indentation */
+.sidebar-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* List Items */
+.sidebar-section li {
+    margin-bottom: 6px;
+}
+
+/* Links */
+.sidebar-section a {
+    color: #2879B8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar-section a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+
+main {
+    grid-column: 2;
+    padding: 30px 25px;
+}
+
+/* Blog Article */
+article {
+    border-bottom: 1px solid #CBD5E0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* Blog Post Title */
+article h2 {
+    color: #28651C;
+    font-size: 34px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* Date and Author */
+.post-info {
+    color: #667267;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Blog Post Images */
+.post-image {
+    width: 185px;
+    height: 105px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+/* images in the right */
+.post-image-right {
+    float: right;
+    margin-left: 20px;
+}
+
+/* images in the left */
+.post-image-left {
+    float: left;
+    margin-right: 20px;
+}
+
+/*clear floats after images */
+article::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* FOOTER */
+footer {
+    grid-column: 1 / 3;
+    background-color: #28651C;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 18px;
+}
+
+footer p {
+    margin: 0;
+}
